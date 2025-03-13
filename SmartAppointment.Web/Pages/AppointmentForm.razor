@@ -1,0 +1,40 @@
+﻿@page "/appointments/book"
+
+@using SmartAppointment.Web.Models
+@using SmartAppointment.Web.Services
+@inject AppointmentService AppointmentService
+@inject NavigationManager NavigationManager
+
+<h3>Book an Appointment</h3>
+
+<EditForm Model="newAppointment" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Professional ID:</label>
+        <InputText @bind-Value="newAppointment.ProfessionalId" />
+    </div>
+
+    <div>
+        <label>Appointment Date:</label>
+        <InputDate @bind-Value="newAppointment.AppointmentDate" />
+    </div>
+    <button type="submit">Book Appointment</button>
+</EditForm>
+@code {
+    private Models.AppointmentDto newAppointment = new Models.AppointmentDto(); 
+
+    private async Task HandleValidSubmit()
+    {
+        var result = await AppointmentService.CreateAppointmentAsync(newAppointment);
+        if (result != null)
+        {
+            NavigationManager.NavigateTo("/appointments");
+        }
+        else
+        {
+            // Handle error
+        }
+    }
+}

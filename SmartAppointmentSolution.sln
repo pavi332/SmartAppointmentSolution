@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAppointment.Application", "SmartAppointment.Application\SmartAppointment.Application.csproj", "{6EB0803D-5492-4FA2-B10B-E0C7744B7B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAppointment.Domain", "SmartAppointment.Domain\SmartAppointment.Domain.csproj", "{B6D4A047-8175-4A05-97E3-17EE459A4A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAppointment.Infrastructure", "SmartAppointment.Infrastructure\SmartAppointment.Infrastructure.csproj", "{700D2FE8-BB66-4015-8027-B9801B3FDE0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAppointment.API", "SmartAppointment.API\SmartAppointment.API.csproj", "{76D58910-3FED-429F-8F2F-A2BDF2A7301E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartAppointment.Web", "SmartAppointment.Web\SmartAppointment.Web.csproj", "{4E235EF9-5BA5-49CB-94F7-C42898B6DDA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EB0803D-5492-4FA2-B10B-E0C7744B7B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB0803D-5492-4FA2-B10B-E0C7744B7B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB0803D-5492-4FA2-B10B-E0C7744B7B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB0803D-5492-4FA2-B10B-E0C7744B7B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D4A047-8175-4A05-97E3-17EE459A4A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D4A047-8175-4A05-97E3-17EE459A4A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D4A047-8175-4A05-97E3-17EE459A4A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D4A047-8175-4A05-97E3-17EE459A4A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700D2FE8-BB66-4015-8027-B9801B3FDE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700D2FE8-BB66-4015-8027-B9801B3FDE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700D2FE8-BB66-4015-8027-B9801B3FDE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700D2FE8-BB66-4015-8027-B9801B3FDE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76D58910-3FED-429F-8F2F-A2BDF2A7301E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76D58910-3FED-429F-8F2F-A2BDF2A7301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76D58910-3FED-429F-8F2F-A2BDF2A7301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76D58910-3FED-429F-8F2F-A2BDF2A7301E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E235EF9-5BA5-49CB-94F7-C42898B6DDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E235EF9-5BA5-49CB-94F7-C42898B6DDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E235EF9-5BA5-49CB-94F7-C42898B6DDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E235EF9-5BA5-49CB-94F7-C42898B6DDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

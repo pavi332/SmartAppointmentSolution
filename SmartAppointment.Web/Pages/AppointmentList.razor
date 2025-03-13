@@ -1,0 +1,44 @@
+﻿@page "/appointments"
+@using SmartAppointment.Web.Models
+@inject SmartAppointment.Web.Services.AppointmentService AppointmentService
+
+
+<h3>Your Appointments</h3>
+
+@if (appointments == null)
+{
+    <p><em>Loading appointments...</em></p>
+}
+else if (!appointments.Any())
+{
+    <p>You have no appointments.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in appointments)
+            {
+                <tr>
+                    <td>@appointment.AppointmentDate.ToString("g")</td>
+                    <td>@appointment.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<AppointmentDto> appointments;
+
+    protected override async Task OnInitializedAsync()
+    {
+        appointments = await AppointmentService.GetUserAppointmentsAsync();
+    }
+}
